@@ -1,19 +1,17 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, StyleSheet } from 'react-native';
 
 // Make a component
 const Header = () => {
-  const { textStyle } = styles;
-
-  return <Text style={textStyle}>Albums</Text>;
+  return <Text style={styles.textStyle}>🎵 Music</Text>;
 }
 
-const styles = {
+const styles = StyleSheet.create({
   textStyle: {
     fontSize: 24,
     fontWeight: '700'
   }
-};
+});
 
 // Make a component available for the entire app
 export default Header;

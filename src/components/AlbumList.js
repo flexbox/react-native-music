@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import axios from 'axios';
 
-class AlbumList extends Component {
+export default class AlbumList extends Component {
   state = { albums: [] };
 
   componentWillMount() {
@@ -24,5 +24,3 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff'
   }
 });
-
-export default AlbumList;

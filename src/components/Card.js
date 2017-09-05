@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
-const Card = () => {
+const Card = (props) => {
   return (
     <View style={styles.container}>
-      <Text>I'm Card</Text>
+      {props.children}
     </View>
   );
 };
